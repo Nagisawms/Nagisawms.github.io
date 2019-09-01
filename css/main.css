@@ -1673,7 +1673,7 @@ article:last-child .post-eof {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #5eff0e;
+  background: #32ff49;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2674,4 +2674,36 @@ ul.breadcrumb li + li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+body {
+  background: url("http://pvte3kzqu.bkt.clouddn.com/20160721165928_c4Kim.png");
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+/*.header {
+background:url(图片链接) none repeat scroll !important;
+}
+//底栏背景色
+.footer {
+background:rgba(238,238,238,0.7) none repeat scroll !important;
+}
+//侧栏图片及内部文字颜色修改
+.sidebar {
+background:url(http://pvte3kzqu.bkt.clouddn.com/20160721165928_c4Kim.png);
+background-size: cover;
+background-position:center;
+background-repeat:no-repeat;
+p,span,a {color: #000;}
+}
+*/
+.main-inner {
+  background: #fff;
+  opacity: 0.8;
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
