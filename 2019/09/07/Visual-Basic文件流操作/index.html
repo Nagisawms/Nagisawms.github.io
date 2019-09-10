@@ -56,6 +56,7 @@
 </script>
 
   <meta name="description" content="Visual Basic 文件流的操作　　我最近参与的是日本一家大型证券公司的内部系统升级项目，该系统据我了解是2002年左右用微软vb6.0开发的，我们项目组要做的是用微软最新的.NETFreamwork4.7.2框架对该系统做一次全面的升级（可能马上又要4.8了），这个系统非常依赖各种ini配置文件，在各个页面的spread中的数据显示依靠处理程序直接读取csv文件中的各种业务数据，所以该系统">
+<meta name="keywords" content="Visual Basic知识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Visual Basic 文件流操作">
 <meta property="og:url" content="http://yoursite.com/2019/09/07/Visual-Basic文件流操作/index.html">
@@ -63,7 +64,7 @@
 <meta property="og:description" content="Visual Basic 文件流的操作　　我最近参与的是日本一家大型证券公司的内部系统升级项目，该系统据我了解是2002年左右用微软vb6.0开发的，我们项目组要做的是用微软最新的.NETFreamwork4.7.2框架对该系统做一次全面的升级（可能马上又要4.8了），这个系统非常依赖各种ini配置文件，在各个页面的spread中的数据显示依靠处理程序直接读取csv文件中的各种业务数据，所以该系统">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://res.cloudinary.com/dxwpyti80/image/upload/v1568042819/temp_i888ne.png">
-<meta property="og:updated_time" content="2019-09-10T16:00:31.443Z">
+<meta property="og:updated_time" content="2019-09-10T16:43:53.541Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Visual Basic 文件流操作">
 <meta name="twitter:description" content="Visual Basic 文件流的操作　　我最近参与的是日本一家大型证券公司的内部系统升级项目，该系统据我了解是2002年左右用微软vb6.0开发的，我们项目组要做的是用微软最新的.NETFreamwork4.7.2框架对该系统做一次全面的升级（可能马上又要4.8了），这个系统非常依赖各种ini配置文件，在各个页面的spread中的数据显示依靠处理程序直接读取csv文件中的各种业务数据，所以该系统">
@@ -166,13 +167,39 @@
       
       
         
+        <li class="menu-item menu-item-tags">
+      
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
+
+  </li>
+      
+      
+      
+        
         <li class="menu-item menu-item-archives">
       
     
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">4</span></a>
 
   </li>
   </ul>
@@ -241,9 +268,22 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-11 00:00:31" itemprop="dateModified" datetime="2019-09-11T00:00:31+08:00">2019-09-11</time>
+                <time title="修改时间：2019-09-11 00:43:53" itemprop="dateModified" datetime="2019-09-11T00:43:53+08:00">2019-09-11</time>
               </span>
             
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VB-NET语法知识/" itemprop="url" rel="index"><span itemprop="name">VB.NET语法知识</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -263,6 +303,8 @@
 <h3 id="文件I-O流模型"><a href="#文件I-O流模型" class="headerlink" title="文件I/O流模型"></a>文件I/O流模型</h3><p>　　VB.NET用流（Sream）表示数据的传输操作，将数据从内存传输到某个载体或设备中，称为 <strong>输出流</strong>,反之，将数据从某个载体或设备传输到内存中，称为 <strong>输入流</strong>，更进一步推广流的概念，可以把与数据传输有关的事物称为 <strong>流</strong>。</p>
 <p>　　VB.NET对文件的操作就是利用流来完成的。流的输入/输出是通过 <strong>System.IO</strong>模型来实现的，该模型提供了大量的类，可以将数据从流中读出或将流中的数据写入文件。</p>
 <p> 下面的表1.1，1.2，1.3分别列出了 <strong>System.IO</strong>名称空间提供的部分常用的类</p>
+<a id="more"></a>
+
 <p> <strong><em>表1.1 System.IO提供的部分类</em></strong></p>
 <table>
 <thead>
@@ -417,6 +459,15 @@
       
 
       <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Visual-Basic知识/" rel="tag"># Visual Basic知识</a>
+            
+          </div>
+        
 
         
 
@@ -432,6 +483,10 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/09/11/VB6-0的SRC转换为VB-NET要注意的地方/" rel="prev" title="VB6.0的SRC转换为VB.NET要注意的地方">
+                  VB6.0的SRC转换为VB.NET要注意的地方 <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
@@ -498,8 +553,48 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
         </a>
       </div>
     

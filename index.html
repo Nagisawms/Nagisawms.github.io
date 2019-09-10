@@ -163,13 +163,39 @@
       
       
         
+        <li class="menu-item menu-item-tags">
+      
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">2</span></a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
+
+  </li>
+      
+      
+      
+        
         <li class="menu-item menu-item-archives">
       
     
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">4</span></a>
 
   </li>
   </ul>
@@ -193,6 +219,91 @@
           <div id="content" class="content">
             
   <div id="posts" class="posts-expand">
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/11/VB6-0的SRC转换为VB-NET要注意的地方/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WMS">
+      <meta itemprop="description" content="TECH OTAKUS SAVE THE WORLD">
+      <meta itemprop="image" content="/images/wms.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王旻爽的blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/2019/09/11/VB6-0的SRC转换为VB-NET要注意的地方/" class="post-title-link" itemprop="url">VB6.0的SRC转换为VB.NET要注意的地方</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-11 00:08:52 / 修改时间：00:31:00" itemprop="dateCreated datePublished" datetime="2019-09-11T00:08:52+08:00">2019-09-11</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VB项目实战与总结/" itemprop="url" rel="index"><span itemprop="name">VB项目实战与总结</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
         <article itemscope itemtype="http://schema.org/Article">
   
   
@@ -238,9 +349,22 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-11 00:00:31" itemprop="dateModified" datetime="2019-09-11T00:00:31+08:00">2019-09-11</time>
+                <time title="修改时间：2019-09-11 00:43:53" itemprop="dateModified" datetime="2019-09-11T00:43:53+08:00">2019-09-11</time>
               </span>
             
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VB-NET语法知识/" itemprop="url" rel="index"><span itemprop="name">VB.NET语法知识</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -260,151 +384,15 @@
 <h3 id="文件I-O流模型"><a href="#文件I-O流模型" class="headerlink" title="文件I/O流模型"></a>文件I/O流模型</h3><p>　　VB.NET用流（Sream）表示数据的传输操作，将数据从内存传输到某个载体或设备中，称为 <strong>输出流</strong>,反之，将数据从某个载体或设备传输到内存中，称为 <strong>输入流</strong>，更进一步推广流的概念，可以把与数据传输有关的事物称为 <strong>流</strong>。</p>
 <p>　　VB.NET对文件的操作就是利用流来完成的。流的输入/输出是通过 <strong>System.IO</strong>模型来实现的，该模型提供了大量的类，可以将数据从流中读出或将流中的数据写入文件。</p>
 <p> 下面的表1.1，1.2，1.3分别列出了 <strong>System.IO</strong>名称空间提供的部分常用的类</p>
-<p> <strong><em>表1.1 System.IO提供的部分类</em></strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>类名</strong></th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>BinaryReader</td>
-<td align="center">用特定的编码从一个输入流中读取二进制数据，默认是UTF-8编码。</td>
-</tr>
-<tr>
-<td>BinaryWriter</td>
-<td align="center">用特定编码以二进制格式向输出流中写入简单数据类型，默认是UTF-8编码。</td>
-</tr>
-<tr>
-<td>BufferedStream</td>
-<td align="center">给另一流上的读写操作添加一个缓冲层。它是密封类，无法继承。缓冲区可提高读取和写入性能。使用缓冲区可进行读取或写入，但不能同时进行这两种操作</td>
-</tr>
-<tr>
-<td>Directory</td>
-<td align="center">提供一些静态方法，用来建立，移动，枚举目录或子目录</td>
-</tr>
-<tr>
-<td>DirectoryInfo</td>
-<td align="center">提供一些实例方法，用来建立，移动，枚举目录或子目录</td>
-</tr>
-</tbody></table>
-<p><strong><em>表1.2 System.IO提供的部分结构</em></strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>类名</strong></th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>WaitForChangeedResult</td>
-<td align="center">含有关于所发生的更改的信息</td>
-</tr>
-</tbody></table>
-<p><strong><em>表1.3 System.IO提供的部分枚举类型</em></strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>类名</strong></th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>FileAccess</td>
-<td align="center">定义访问文件的方式</td>
-</tr>
-<tr>
-<td>FileAttributes</td>
-<td align="center">提供文件和文件夹的属性</td>
-</tr>
-<tr>
-<td>FileMode</td>
-<td align="center">指定打开文件的方式</td>
-</tr>
-<tr>
-<td>FileShare</td>
-<td align="center">指定文件的共享方式</td>
-</tr>
-<tr>
-<td>NotifyFilters</td>
-<td align="center">指定监视文件或文件夹更改的类型</td>
-</tr>
-<tr>
-<td>SeekOrigin</td>
-<td align="center">指定文件存取时的相对位置</td>
-</tr>
-<tr>
-<td>WatcherChangeTypes</td>
-<td align="center">可能会发生的文件或文件夹的更改</td>
-</tr>
-<tr>
-<td>—</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td>###  文件夹和文件操作</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<h4 id="文件夹操作"><a href="#文件夹操作" class="headerlink" title="文件夹操作"></a>文件夹操作</h4><p>　　文件夹操作主要利用 <strong>Directory</strong>和 <strong>DirectoryInfo</strong>两个类来实现的，在使用这两个类之前，需要先引入 <strong>System.IO</strong>名称空间</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Imports System.IO   &apos;引入System.IO名称空间</span><br></pre></td></tr></table></figure>
-
-<h5 id="Directory类"><a href="#Directory类" class="headerlink" title="Directory类"></a><strong>Directory类</strong></h5><p>　　Directory类提供的方法是共享的，所以不需要先建立对象就可以直接调用它的方法。下面介绍它的常用方法。</p>
-<p>(1) CreatDirectory方法</p>
-<p>　　见名知意，该方法的功能是建立一个新的文件夹，同时返回一个包括新建文件夹信息的DirectoryInfo对象（后面会介绍到），调用它的语法格式如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.CreateDirectory(Path)   &apos;path代表文件夹的合法路径。String类型</span><br></pre></td></tr></table></figure>
-
-<p>例如,在Button的Click事件中写如下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Imports System.IO</span><br><span class="line"></span><br><span class="line">Public Class Form1</span><br><span class="line">    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click</span><br><span class="line">        Directory.CreateDirectory(&quot;D:\temp&quot;)</span><br><span class="line">    End Sub</span><br><span class="line">End Class</span><br></pre></td></tr></table></figure>
-
-<p>单击button后就成功在D盘下创建了temp文件夹</p>
-<p><img src="https://res.cloudinary.com/dxwpyti80/image/upload/v1568042819/temp_i888ne.png" alt></p>
-<p>当然CreateDirectory方法还可以一次建立多级文件夹，示例如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.CreateDirectory(&quot;C:\dir1\dir2\dir3&quot;)   &apos;建立多级文件夹</span><br></pre></td></tr></table></figure>
-
-<p>（2）Delete方法</p>
-<p>　　Delete方法的功能是删除指定文件夹及其中的所有文件和子文件夹，语法如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.Delete(path,force)            &apos;force,可选项，Boolean型，默认为false，表示不删除子文件夹。</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><strong><em>若要删除的文件夹不存在，Delete方法将产生异常。</em></strong></li>
-</ul>
-<p>(3) Exists方法</p>
-<p>　　Exists方法的功能是判断指定的文件夹是否存在，若存在则返回true。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.Exists(path)</span><br></pre></td></tr></table></figure>
-
-<p>　　如果指定的文件夹不存在，Directory类的很多方法会失败，因此在做文件夹操作前，可以先用Exists方法确定文件夹是否存在，示例如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if Directory.Exists(&quot;c:\temp&quot;) then </span><br><span class="line">    Directory.Delete(&quot;C:\temp&quot;,true)</span><br></pre></td></tr></table></figure>
-
-<p>（4）Move方法</p>
-<p>　　Move方法的功能是移动指定的整个文件夹到 <strong>同一个磁盘</strong>中的另外一个位置，Move方法具有改名功能，即将源文件夹移动到目标文件夹指定的位置，但不是移动到目标文件夹中，而是将源文件夹名改为目标文件夹名，语法如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.Move(source,destination)    &apos;source代表源文夹夹路径，destination代表指定文件夹路径</span><br></pre></td></tr></table></figure>
-
-<p>并且值得注意的是，如果源文件夹路径和目标文件夹路径不是同一个磁盘，或目标文件夹已存在都将产生异常。</p>
-<p>（5）GetLogicalDrives方法</p>
-<p>　　该方法的功能是返回一个字符串数组，其中包括当前计算机中所有逻辑驱动器名，每个驱动器名是形如“C:\”的字符串，语法如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetLogicalDrives()</span><br></pre></td></tr></table></figure>
-
-<p>　　例如，下面示例将获得本机所有逻辑驱动器的名字，将其存放到字符串数组muDrv中，并将数组中所有元素放到一个组合框ComboBOx1中。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Dim myDrv() As String</span><br><span class="line">myDrv = Directory.GetLogicalDrives()</span><br><span class="line">For Each x In myDrv</span><br><span class="line">    ComboBox1.Items.Add(x)</span><br><span class="line">Next x</span><br></pre></td></tr></table></figure>
-
-<p>(6)GetDirectories方法</p>
-<p>　　该方法的功能是返回一个字符串数组，其中包括指定文件夹的所有子文件夹的完整路径名，但不包括子文件夹中的子文件夹名，语法如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetDirectories(path,pattern)   &apos;pattern,可选项，指定要查找子文件夹名的搜索通配符。</span><br></pre></td></tr></table></figure>
-
-<p>该方法还可以使用通配符，获得符合条件的子文件夹名，例如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Dim myDrv() As String</span><br><span class="line">myDrv = Directory.GetDirectories(&quot;C:\WinNT&quot;,&quot;*system*&quot;)</span><br></pre></td></tr></table></figure>
-
-<p>（7)GetFiles方法</p>
-<p>该方法的功能是返回一个字符串数组，其中包括指定文件夹的所有文件的完整路径名，但不包括子文件夹中的文件名，语法如下。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetFiles(path,pattern)</span><br></pre></td></tr></table></figure>
-
-<p>（8）GetFileSystemEntries方法</p>
-<p>　　该方法的功能是返回一个字符串数组，其中包括指定文件夹的所有子文件夹和文件的完整路径名，但不包括子文件夹中的文件夹和文件名， <strong>该方法实际是GetDirectory和GetFiles方法返回的数组的总和</strong>，语法如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetFileSystemEntries(path,pattern)</span><br></pre></td></tr></table></figure>
-
-
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/09/07/Visual-Basic文件流操作/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -457,12 +445,33 @@
                 
               
 
-              <time title="创建时间：2019-09-01 22:04:10 / 修改时间：23:06:36" itemprop="dateCreated datePublished" datetime="2019-09-01T22:04:10+08:00">2019-09-01</time>
+              <time title="创建时间：2019-09-01 22:04:10" itemprop="dateCreated datePublished" datetime="2019-09-01T22:04:10+08:00">2019-09-01</time>
             </span>
           
             
 
             
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-11 00:28:57" itemprop="dateModified" datetime="2019-09-11T00:28:57+08:00">2019-09-11</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/自建Hexo博客/" itemprop="url" rel="index"><span itemprop="name">自建Hexo博客</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -533,6 +542,31 @@
               
 
               <time title="创建时间：2019-08-31 15:40:56" itemprop="dateCreated datePublished" datetime="2019-08-31T15:40:56+08:00">2019-08-31</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-09-11 00:27:54" itemprop="dateModified" datetime="2019-09-11T00:27:54+08:00">2019-09-11</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/自建Hexo博客/" itemprop="url" rel="index"><span itemprop="name">自建Hexo博客</span></a></span>
+
+                
+                
+              
             </span>
           
 
@@ -628,8 +662,48 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
         </a>
       </div>
     
