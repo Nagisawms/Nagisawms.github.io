@@ -63,7 +63,7 @@
 <meta property="og:description" content="Visual Basic 文件流的操作　　我最近参与的是日本一家大型证券公司的内部系统升级项目，该系统据我了解是2002年左右用微软vb6.0开发的，我们项目组要做的是用微软最新的.NETFreamwork4.7.2框架对该系统做一次全面的升级（可能马上又要4.8了），这个系统非常依赖各种ini配置文件，在各个页面的spread中的数据显示依靠处理程序直接读取csv文件中的各种业务数据，所以该系统">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://res.cloudinary.com/dxwpyti80/image/upload/v1568042819/temp_i888ne.png">
-<meta property="og:updated_time" content="2019-09-09T15:54:56.740Z">
+<meta property="og:updated_time" content="2019-09-10T16:00:31.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Visual Basic 文件流操作">
 <meta name="twitter:description" content="Visual Basic 文件流的操作　　我最近参与的是日本一家大型证券公司的内部系统升级项目，该系统据我了解是2002年左右用微软vb6.0开发的，我们项目组要做的是用微软最新的.NETFreamwork4.7.2框架对该系统做一次全面的升级（可能马上又要4.8了），这个系统非常依赖各种ini配置文件，在各个页面的spread中的数据显示依靠处理程序直接读取csv文件中的各种业务数据，所以该系统">
@@ -241,7 +241,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-09 23:54:56" itemprop="dateModified" datetime="2019-09-09T23:54:56+08:00">2019-09-09</time>
+                <time title="修改时间：2019-09-11 00:00:31" itemprop="dateModified" datetime="2019-09-11T00:00:31+08:00">2019-09-11</time>
               </span>
             
           
@@ -370,17 +370,42 @@
 <p>　　Delete方法的功能是删除指定文件夹及其中的所有文件和子文件夹，语法如下。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.Delete(path,force)            &apos;force,可选项，Boolean型，默认为false，表示不删除子文件夹。</span><br></pre></td></tr></table></figure>
 
-<blockquote>
 <ul>
 <li><strong><em>若要删除的文件夹不存在，Delete方法将产生异常。</em></strong></li>
 </ul>
-</blockquote>
 <p>(3) Exists方法</p>
 <p>　　Exists方法的功能是判断指定的文件夹是否存在，若存在则返回true。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.Exists(path)</span><br></pre></td></tr></table></figure>
 
 <p>　　如果指定的文件夹不存在，Directory类的很多方法会失败，因此在做文件夹操作前，可以先用Exists方法确定文件夹是否存在，示例如下。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if Directory.Exists(&quot;c:\temp&quot;) then </span><br><span class="line">    Directory.Delete(&quot;C:\temp&quot;,true)</span><br></pre></td></tr></table></figure>
+
+<p>（4）Move方法</p>
+<p>　　Move方法的功能是移动指定的整个文件夹到 <strong>同一个磁盘</strong>中的另外一个位置，Move方法具有改名功能，即将源文件夹移动到目标文件夹指定的位置，但不是移动到目标文件夹中，而是将源文件夹名改为目标文件夹名，语法如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.Move(source,destination)    &apos;source代表源文夹夹路径，destination代表指定文件夹路径</span><br></pre></td></tr></table></figure>
+
+<p>并且值得注意的是，如果源文件夹路径和目标文件夹路径不是同一个磁盘，或目标文件夹已存在都将产生异常。</p>
+<p>（5）GetLogicalDrives方法</p>
+<p>　　该方法的功能是返回一个字符串数组，其中包括当前计算机中所有逻辑驱动器名，每个驱动器名是形如“C:\”的字符串，语法如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetLogicalDrives()</span><br></pre></td></tr></table></figure>
+
+<p>　　例如，下面示例将获得本机所有逻辑驱动器的名字，将其存放到字符串数组muDrv中，并将数组中所有元素放到一个组合框ComboBOx1中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Dim myDrv() As String</span><br><span class="line">myDrv = Directory.GetLogicalDrives()</span><br><span class="line">For Each x In myDrv</span><br><span class="line">    ComboBox1.Items.Add(x)</span><br><span class="line">Next x</span><br></pre></td></tr></table></figure>
+
+<p>(6)GetDirectories方法</p>
+<p>　　该方法的功能是返回一个字符串数组，其中包括指定文件夹的所有子文件夹的完整路径名，但不包括子文件夹中的子文件夹名，语法如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetDirectories(path,pattern)   &apos;pattern,可选项，指定要查找子文件夹名的搜索通配符。</span><br></pre></td></tr></table></figure>
+
+<p>该方法还可以使用通配符，获得符合条件的子文件夹名，例如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Dim myDrv() As String</span><br><span class="line">myDrv = Directory.GetDirectories(&quot;C:\WinNT&quot;,&quot;*system*&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>（7)GetFiles方法</p>
+<p>该方法的功能是返回一个字符串数组，其中包括指定文件夹的所有文件的完整路径名，但不包括子文件夹中的文件名，语法如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetFiles(path,pattern)</span><br></pre></td></tr></table></figure>
+
+<p>（8）GetFileSystemEntries方法</p>
+<p>　　该方法的功能是返回一个字符串数组，其中包括指定文件夹的所有子文件夹和文件的完整路径名，但不包括子文件夹中的文件夹和文件名， <strong>该方法实际是GetDirectory和GetFiles方法返回的数组的总和</strong>，语法如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Directory.GetFileSystemEntries(path,pattern)</span><br></pre></td></tr></table></figure>
 
 
     </div>
